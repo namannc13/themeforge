@@ -2,10 +2,10 @@ export const projects = [
   {
     id: 1,
     name: "Shadcn Themes",
-    github: "github.com/namannc13/chom",
-    githubLink: "https://github.com/namannc13/chom",
-    deployment: "chom-eosin.vercel.app",
-    deployedLink: "https://chom-eosin.vercel.app/",
+    github: "github.com/namannc13/themeforge",
+    githubLink: "https://github.com/namannc13/themeforge",
+    deployment: "themeforge.vercel.app",
+    deployedLink: "https://themeforge.vercel.app/",
     description: [
       [
         { text: "A website to " },
