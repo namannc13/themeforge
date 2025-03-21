@@ -1,28 +1,27 @@
 import { cn } from "@/lib/utils";
 import { Star } from "lucide-react";
 import { useTheme } from "./theme-provider";
-import { themes } from "@/lib/themes";
 
 const themeColors = {
-  light: `bg-${themes[0].color}`,
-  dark: `bg-${themes[1].color}`,
-  light_blue: `bg-${themes[2].color}`,
-  dark_blue: `bg-${themes[3].color}`,
-  light_green: `bg-${themes[4].color}`,
-  dark_green: `bg-${themes[5].color}`,
-  light_red: `bg-${themes[6].color}`,
-  dark_red: `bg-${themes[7].color}`,
+  light: "bg-white",
+  dark: "bg-black",
+  light_blue: "bg-white",
+  dark_blue: "bg-black",
+  light_green: "bg-white",
+  dark_green: "bg-black",
+  light_red: "bg-white",
+  dark_red: "bg-black",
 } as const;
 
 const themeAccentColors = {
-  light: `bg-[${themes[0].accentColor}]`,
-  dark: `bg-[${themes[1].accentColor}]`,
-  light_blue: `bg-[${themes[2].accentColor}]`,
-  dark_blue: `bg-[${themes[3].accentColor}]`,
-  light_green: `bg-[${themes[4].accentColor}]`,
-  dark_green: `bg-[${themes[5].accentColor}]`,
-  light_red: `bg-[${themes[6].accentColor}]`,
-  dark_red: `bg-[${themes[7].accentColor}]`,
+  light: "bg-[#000000]",
+  dark: "bg-[#FFFFFF]",
+  light_blue: "bg-[#52A2E7]",
+  dark_blue: "bg-[#67B1EB]",
+  light_green: "bg-[#51B972]",
+  dark_green: "bg-[#5EC57C]",
+  light_red: "bg-[#FF6B6B]",
+  dark_red: "bg-[#FF8787]",
 } as const;
 
 export default function ThemeCard({ currentTheme }: { currentTheme: string }) {
@@ -41,17 +40,17 @@ export default function ThemeCard({ currentTheme }: { currentTheme: string }) {
     <div className="w-full flex items-center gap-2">
       <div
         className={cn(
-          "h-4 w-10 flex",
+          "h-4 w-10 flex border",
           (theme === "dark" ||
             theme === "dark_blue" ||
             theme === "dark_green" ||
             theme === "dark_red") &&
-            "border border-white",
+            " border-white",
           (theme === "light" ||
             theme === "light_blue" ||
             theme === "light_green" ||
             theme === "light_red") &&
-            "border border-black"
+            " border-black"
         )}
       >
         <div

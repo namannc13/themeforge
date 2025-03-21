@@ -1,15 +1,5 @@
 import { createContext, useContext, useEffect, useState } from "react";
-
-export const themes = [
-  "light",
-  "dark",
-  "light_blue",
-  "dark_blue",
-  "light_green",
-  "dark_green",
-  "light_red",
-  "dark_red",
-] as const;
+import { themes } from "@/data/themes";
 
 type Theme = (typeof themes)[number];
 

@@ -3,7 +3,7 @@ import { ModeToggle } from "./components/mode-toggle";
 import { cn } from "./lib/utils";
 import Section from "./components/section";
 import ThemeCard from "./components/theme-card";
-import { themes } from "./lib/themes";
+import { themes } from "./data/themes";
 import { Calendar } from "@/components/ui/calendar";
 import { useState } from "react";
 import { DateRange } from "react-day-picker";
@@ -28,7 +28,7 @@ function Themes() {
   return (
     <div className="grid grid-cols-2 sm:grid-cols-3 gap-2">
       {themes.map((theme) => (
-        <ThemeCard key={theme.name} currentTheme={theme.name} />
+        <ThemeCard key={theme} currentTheme={theme} />
       ))}
     </div>
   );
