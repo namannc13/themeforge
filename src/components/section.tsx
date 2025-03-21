@@ -8,7 +8,7 @@ function Section({
   children: React.ReactNode;
 }) {
   return (
-    <div className="flex flex-col gap-4 py-4">
+    <div className="flex flex-col gap-8 sm:gap-4 py-4">
       <Heading>{header}</Heading>
       {children}
     </div>
