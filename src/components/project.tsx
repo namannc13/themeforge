@@ -43,9 +43,9 @@ function Project({
         ))}
       </div>
       {description.map((item, index) => (
-        <Para className=" flex gap-2 items-center" key={index}>
-          <ArrowRight className="size-4" />
+        <Para className=" flex gap-2" key={index}>
           <div>
+            <ArrowRight className="size-4 mr-4 inline" />
             {item.map((segment, i) =>
               segment.highlight ? (
                 <Highlight key={i}>{segment.text}</Highlight>
