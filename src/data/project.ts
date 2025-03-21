@@ -14,9 +14,10 @@ export const projects = [
       ],
       [
         { text: "It provides all" },
-        { text: "official Shadcn themes", highlight: true },
+        { text: " official Shadcn Themes", highlight: true },
         { text: " plus" },
-        { text: "additional custom themes created by me", highlight: true },
+        { text: " additional Custom Themes", highlight: true },
+        { text: " created by Me" },
       ],
     ],
     technologies: [
